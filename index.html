@@ -1,129 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<!-- FAVICON -->
+<link rel="icon" type="image/png" href="img/mani.jpg">
     <title>Manasi Rane | Web Developer</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="description" content="Manasi Rane - Web Developer Portfolio">
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg">
-    <div class="container">
-        <a class="logo" href="#"><b>Manasi Rane</b></a>
+    <!-- NAVBAR -->
+    <header class="navbar">
 
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-            ☰
+        <a href="#home" class="logo">
+            MANASI<span>.</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#work">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false"
+            aria-controls="navLinks">
+
+            <span></span>
+            <span></span>
+
         </button>
 
-        <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav ms-auto">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#work">WORK</a></li>
-                <li><a href="#experience">EXPERIENCE</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <!-- TOP INFORMATION -->
+            <div class="hero-top">
+
+                <div class="hero-label">
+                    <span class="status-dot"></span>
+                    PERSONAL PORTFOLIO
+                </div>
+
+                <span class="hero-year">2026</span>
+
+            </div>
+
+
+
+            <!-- MAIN CONTENT -->
+            <div class="hero-container">
+
+                <!-- LEFT SIDE: INTRODUCTION -->
+                <div class="hero-content">
+
+                    <p class="hero-intro">
+                        HELLO, I'M
+                    </p>
+
+                    <h1 class="hero-title" aria-label="Manasi Rane">
+
+                        <span class="title-line" id="firstName">
+                            MANASI
+                        </span>
+
+                        <span class="title-line" id="lastName">
+                            RANE<span class="accent"></span>
+                        </span>
+
+                    </h1>
+
+                    <!-- ROLE AND BUTTONS -->
+                    <div class="hero-bottom">
+
+                        <div class="hero-role">
+
+                            <span class="role-line"></span>
+
+                            <h2>Web Developer</h2>
+
+                        </div>
+
+                        <!-- <div class="hero-actions">
+
+                <a href="#projects" class="btn btn-primary">
+                    View Projects
+                    <span>↗</span>
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+                    Contact Me
+                </a>
+
+            </div> -->
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT SIDE: PROFILE PHOTO -->
+                <div class="hero-image">
+
+                    <img src="img/mani.jpg" alt="Manasi Rane">
+
+                </div>
+
+            </div>
+
+
+            <!-- FOOTER -->
+            <div class="hero-footer">
+
+                <span>DESIGN. DEVELOP. DEPLOY.</span>
+
+                <a href="#about" class="scroll-link">
+                    SCROLL TO EXPLORE
+                    <span>↓</span>
+                </a>
+
+            </div>
+
+
+            <!-- BACKGROUND EFFECT -->
+            <div class="hero-decoration"></div>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section class="about-section" id="about">
+
+            <div class="about-container">
+
+                <!-- Section Label -->
+                <p class="about-label">01 / ABOUT ME</p>
+
+                <div class="about-content">
+
+                    <!-- LEFT: PROFILE IMAGE -->
+                    <div class="about-left">
+
+                        <div class="about-image-wrapper">
+
+                            <div class="about-image-glow"></div>
+
+                            <div class="about-image">
+                                <img src="img/manasi.jpeg" alt="Manasi Rane - Web Developer">
+                            </div>
+
+                            <div class="about-image-tag">
+                                <span class="status-dot"></span>
+                                CREATIVE DEVELOPER
+                            </div>
+
+                            <!-- <span class="about-image-number">01</span> -->
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RIGHT: CONTENT -->
+                    <div class="about-right">
+
+                        <p class="about-small-label">
+                            GET TO KNOW ME
+                        </p>
+
+                        <h2 class="about-title" id="aboutTitle">
+                            A LITTLE BIT ABOUT ME
+                        </h2>
+
+                        <h3 class="about-heading">
+                            Building meaningful digital experiences
+                            with <span>creativity & code.</span>
+                        </h3>
+
+                        <p class="about-description">
+                            I'm Manasi Rane, a Web Developer passionate about creating responsive,
+        user-friendly and visually engaging websites. I work with
+        HTML, CSS, JavaScript and WordPress to turn ideas into
+        functional digital experiences.
+
+                           From developing website pages to managing hosting,
+        deployment and technical SEO, I enjoy working across
+        different stages of the website development process.
+                        </p>
+
+                        <div class="about-divider"></div>
+
+                        <div class="about-details">
+
+                            <div class="about-detail">
+                                <span class="detail-number">01</span>
+                                <span>Creative Thinking & UI Development</span>
+                            </div>
+
+                            <div class="about-detail">
+                                <span class="detail-number">02</span>
+                                <span>Website & WordPress Management</span>
+                            </div>
+
+                            <div class="about-detail">
+                                <span class="detail-number">03</span>
+                                <span>Technical SEO & Deployment</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- <div class="about-footer">
+                    <span>DESIGNED WITH PURPOSE</span>
+                    <span>MANASI RANE <span class="about-blue-dot">.</span></span>
+                </div> -->
+
+            </div>
+
+        </section>
+
+
+<!-- ================================
+     SKILLS & EXPERTISE SECTION
+================================= -->
+
+<section class="skills-section" id="skills">
+
+    <div class="skills-container">
+
+        <!-- SECTION HEADER -->
+        <div class="skills-header">
+
+            <p class="skills-label">02 / WHAT I DO</p>
+
+            <h2 class="skills-title">
+                My Skills.
+                <span>My Expertise.</span>
+            </h2>
+
+            <p class="skills-description">
+                Technologies and tools I use to build,
+                manage and optimize digital experiences.
+            </p>
+
         </div>
-    </div>
-</nav>
 
 
-<!-- HERO -->
-<section class="hero" id="home">
+        <!-- SKILLS GRID -->
+        <div class="skills-grid">
 
-    <div class="container">
+            <!-- CARD 01 - LARGE -->
+            <div class="skill-card skill-card-large">
 
-        <!-- <div class="top-info">
-            <span>WEB DEVELOPER<br>FRONTEND DEVELOPER</span>
-
-            <span>PORTFOLIO<br>2026</span>
-        </div> -->
-
-        <div class="row align-items-center">
-
-            <div class="col-lg-7">
-
-                <p class="small-title">BUILDING DIGITAL EXPERIENCES</p>
-
-                <h1>
-                    MANASI<br>
-                    <span>RANE</span>
-                </h1>
-
-                <h2>
-                    WEB DEVELOPER <b>&</b> FRONTEND DEVELOPER
-                </h2>
-
-                <p class="intro">
-                    I build clean, responsive and modern websites
-                    with a focus on performance, usability and
-                    meaningful digital experiences.
-                </p>
-
-                <div class="buttons">
-                    <a href="#work" class="btn-main">
-                        VIEW MY WORK →
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/manasi-rane-539a99220/"
-                       target="_blank"
-                       class="btn-outline">
-                        LINKEDIN ↗
-                    </a>
+                <div class="skill-card-top">
+                    <span class="skill-number">01</span>
+                    <span class="skill-arrow">↗</span>
                 </div>
 
-            </div>
+                <div class="skill-card-content">
 
+                    <p class="skill-category">CORE EXPERTISE</p>
 
-            <!-- PROFILE -->
-            <div class="col-lg-5">
+                    <h3>Frontend<br>Development</h3>
 
-                <div class="profile-card">
+                    <p class="skill-text">
+                        Building responsive, visually engaging
+                        and user-friendly websites with clean
+                        structure and modern web technologies.
+                    </p>
 
-                    <div class="profile-image">
-
-                        <div class="green-circle-"></div>
-
-                        <img src="img/mani.jpg"
-                             alt="Manasi Rane">
-
-                    </div>
-
-                    <div class="profile-info">
-
-                        <div>
-                            <small>HELLO, I'M</small>
-
-                            <h3>MANASI RANE</h3>
-                        </div>
-
-                        <div class="available">
-                            <span></span>
-                            AVAILABLE
-                        </div>
-
-                    </div>
-
-                    <div class="profile-bottom">
-                        <span>MUMBAI, INDIA</span>
-                        <span>WEB DEVELOPER</span>
+                    <div class="skill-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Responsive Design</span>
                     </div>
 
                 </div>
 
+                <div class="skill-card-decoration">01</div>
+
             </div>
 
+
+            <!-- RIGHT SIDE CARDS -->
+            <div class="skills-right">
+
+
+                <!-- CARD 02 -->
+                <div class="skill-card">
+
+                    <div class="skill-card-top">
+                        <span class="skill-number">02</span>
+                        <span class="skill-arrow">↗</span>
+                    </div>
+
+                    <div class="skill-card-content">
+
+                        <p class="skill-category">WEBSITE DEVELOPMENT</p>
+
+                        <h3>CMS & Development</h3>
+
+                        <p class="skill-text">
+                            Developing and maintaining websites
+                            with practical CMS solutions.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>WordPress</span>
+                            <span>PHP</span>
+                            <span>Maintenance</span>
+                            <span>Bug Fixing</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 03 -->
+                <div class="skill-card">
+
+                    <div class="skill-card-top">
+                        <span class="skill-number">03</span>
+                        <span class="skill-arrow">↗</span>
+                    </div>
+
+                    <div class="skill-card-content">
+
+                        <p class="skill-category">SEARCH OPTIMIZATION</p>
+
+                        <h3>Technical SEO</h3>
+
+                        <p class="skill-text">
+                            Improving website structure,
+                            crawlability and search engine visibility.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>Meta Tags</span>
+                            <span>Sitemap</span>
+                            <span>Robots.txt</span>
+                            <span>Canonical URLs</span>
+                            <span>Indexing</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 04 -->
+                <div class="skill-card">
+
+                    <div class="skill-card-top">
+                        <span class="skill-number">04</span>
+                        <span class="skill-arrow">↗</span>
+                    </div>
+
+                    <div class="skill-card-content">
+
+                        <p class="skill-category">INFRASTRUCTURE</p>
+
+                        <h3>Hosting & Deployment</h3>
+
+                        <p class="skill-text">
+                            Managing hosting, domains,
+                            deployment and website migrations.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>cPanel</span>
+                            <span>GoDaddy</span>
+                            <span>Hostinger</span>
+                            <span>Cloudflare</span>
+                            <span>DNS</span>
+                            <span>SSL</span>
+                            <span>Migration</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER TEXT -->
+        <div class="skills-footer">
+            <span>BUILD</span>
+            <span class="skills-footer-dot"></span>
+            <span>OPTIMIZE</span>
+            <span class="skills-footer-dot"></span>
+            <span>MAINTAIN</span>
+            <span class="skills-footer-dot"></span>
+            <span>DEPLOY</span>
         </div>
 
     </div>
@@ -131,399 +430,528 @@
 </section>
 
 
+<!-- =================================
+     WORK / SELECTED PROJECTS
+================================= -->
 
-<!-- WORK -->
-<section class="section" id="work">
 
-    <div class="container">
+<!-- =========================================
+     WORK SECTION
+========================================= -->
 
-        <div class="section-header">
 
-            <!-- <span>01 / SELECTED WORK</span> -->
+<!-- =========================================
+     WORK SECTION
+========================================= -->
 
-            <div>
-                <h2>
-                    THINGS I'VE<br>
-                    <i>BUILT.</i>
-                </h2>
+<section class="work-section" id="work">
 
-                <p>
-                    Real website work and landing page
-                    experiments.
+    <div class="work-bg-glow work-glow-one"></div>
+    <div class="work-bg-glow work-glow-two"></div>
+
+    <div class="work-container">
+
+        <!-- WORK INTRO -->
+        <header class="work-intro">
+
+            <p class="work-label">
+                <span>03</span> / MY WORK
+            </p>
+
+            <h2 class="work-heading">
+                <span class="work-heading-light">SELECTED</span>
+                <span class="work-heading-bold">
+                    WORK<span class="work-dot">.</span>
+                </span>
+            </h2>
+
+            <!-- <div class="work-intro-bottom">
+
+                <p class="work-description">
+                    A collection of my professional experience,
+                    freelance projects and development journey.
                 </p>
+
+                <div class="work-scroll-indicator">
+                    <span>SCROLL TO EXPLORE</span>
+                    <span class="scroll-line"></span>
+                </div>
+
+            </div> -->
+
+        </header>
+
+
+        <!-- PROFESSIONAL EXPERIENCE -->
+        <section class="experience-section" id="experience">
+
+            <div class="work-section-heading">
+
+                <div>
+                    <span class="work-index">01 /</span>
+                    <h3>PROFESSIONAL EXPERIENCE</h3>
+                </div>
+
+                <span class="work-category">
+                    PROFESSIONAL
+                </span>
+
             </div>
 
-        </div>
+
+            <div class="experience-pin">
+
+                <div class="experience-track">
+
+                    <!-- F60HOST -->
+                    <article class="experience-card">
+
+                        <div class="experience-card-top">
+
+                            <span class="experience-number">01</span>
+
+                            <span class="experience-date">
+                                DEC 2024 — Present
+                            </span>
+
+                        </div>
+
+
+                        <div class="experience-card-content">
+
+                            <div class="experience-company">
+
+                                <span class="company-symbol">F</span>
+
+                                <span>F60Host LLP</span>
+
+                            </div>
+
+                            <h3>Senior Web Developer</h3>
+
+                            <p class="experience-location">
+                                Mumbai, India
+                            </p>
+
+                            <div class="experience-divider"></div>
+
+                            <p class="experience-overview">
+                                Developed and maintained digital experiences
+                                across multiple industries, handling website
+                                development, updates and technical implementation.
+                            </p>
+
+
+                            <div class="experience-projects">
+
+                                <div class="experience-project">
+
+                                    <span class="project-bullet"></span>
+
+                                    <div>
+                                        <strong>Multiple Client Websites</strong>
+                                        <p>Piping, Metal, IT & Jewellery</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="experience-project">
+
+                                    <span class="project-bullet"></span>
+
+                                    <div>
+                                        <strong>ToolZone.tech</strong>
+                                        <p>Live Tools Platform</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="experience-project">
+
+                                    <span class="project-bullet"></span>
+
+                                    <div>
+                                        <strong>Solar Box</strong>
+                                        <p>US-Based Agency · Project Work</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="experience-tech">
+                                <span>WordPress</span>
+                                <span>PHP</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Technical SEO</span>
+                            </div>
+
+                        </div>
+
+                        <span class="experience-card-decoration">01</span>
+
+                    </article>
+
+
+                    <!-- MEXO SOLUTIONS -->
+                    <article class="experience-card">
+
+                        <div class="experience-card-top">
+
+                            <span class="experience-number">02</span>
+
+                            <span class="experience-date">
+                                JUN 2024 — SEP 2024
+                            </span>
+
+                        </div>
+
+
+                        <div class="experience-card-content">
+
+                            <div class="experience-company">
+
+                                <span class="company-symbol mexo-symbol">M</span>
+
+                                <span>Mexo Solutions</span>
+
+                            </div>
+
+                            <h3>Web Developer</h3>
+
+                            <p class="experience-location">
+                                Mexo Solutions Private Limited · Mumbai, India
+                            </p>
+
+                            <div class="experience-divider"></div>
+
+                            <p class="experience-overview">
+                                Designed and developed responsive websites
+                                with a focus on functionality, clean layouts
+                                and user experience.
+                            </p>
+
+
+                            <div class="experience-projects">
+
+                                <div class="experience-project">
+
+                                    <span class="project-bullet"></span>
+
+                                    <div>
+                                        <strong>Website Development</strong>
+                                        <p>Design, development & customization</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="experience-project">
+
+                                    <span class="project-bullet"></span>
+
+                                    <div>
+                                        <strong>Domain & Deployment</strong>
+                                        <p>Domain purchase and website launch</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="experience-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Web Development</span>
+                            </div>
+
+                        </div>
+
+                        <span class="experience-card-decoration">02</span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <div class="experience-progress">
+                <span class="experience-progress-fill"></span>
+            </div>
+
+            <p class="experience-hint">
+                SCROLL TO EXPLORE EXPERIENCE
+            </p>
+
+        </section>
+<!-- FREELANCE PROJECTS -->
+
+<section class="freelance-section" id="freelance">
+
+    <div class="work-section-heading">
+        <span>02 / INDEPENDENT WORK</span>
+        <h3>FREELANCE PROJECTS</h3>
+        <p>Websites designed and developed for real-world business needs.</p>
+    </div>
+<div class="freelance-pin">
+    <div class="freelance-grid">
+
+        <!-- CONSTRUCTION WEBSITE -->
+        <article class="freelance-card">
+
+            <div class="project-preview construction-preview">
+                <div class="preview-topbar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="construction-mockup">
+                    <small>BUILDING THE FUTURE</small>
+                    <h4>CONSTRUCT<br>WITH CONFIDENCE.</h4>
+                    <div class="mockup-line"></div>
+                    <span>Architecture • Construction • Design</span>
+                </div>
+            </div>
+
+            <div class="freelance-info">
+                <div class="project-meta">
+                    <span>FREELANCE</span>
+                    <span>IN PROGRESS</span>
+                </div>
+
+                <h4>Construction Business Website</h4>
+
+                <p>
+                    A business website concept focused on presenting
+                    construction services, projects and company details.
+                </p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Responsive Design</span>
+                </div>
+            </div>
+
+        </article>
 
 
         <!-- ISHAKALA -->
-        <div class="project">
+        <article class="freelance-card">
 
-            <div class="project-image">
-
-                <div class="browser">
-
-                    <div class="browser-top">
-                        ● ● ●
-                    </div>
-
-                    <div class="website-preview">
-
-                        <h4>ISHAKALA</h4>
-
-                        <h5>
-                            ART<br>
-                            <span>& CULTURE</span>
-                        </h5>
-
-                        <div class="preview-circle"></div>
-
-                    </div>
-
+            <div class="project-preview ishakala-preview">
+                <div class="preview-topbar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
 
+                <div class="ishakala-mockup">
+                    <small>HANDMADE WITH DEVOTION</small>
+                    <h4>Ishakala</h4>
+                    <p>Handcrafted Ganpati Idols</p>
+                    <span class="mockup-button">EXPLORE COLLECTION</span>
+                </div>
             </div>
 
+            <div class="freelance-info">
+                <div class="project-meta">
+                    <span>FREELANCE</span>
+                    <span>LIVE WEBSITE</span>
+                </div>
 
-            <div class="project-content">
-
-                <!-- <small>01 / LIVE WEBSITE</small> -->
-
-                <h3>
-                    Ishakala<br>
-                    <i>Studio</i>
-                </h3>
+                <h4>Ishakala – Handmade Idols</h4>
 
                 <p>
-                    A responsive website developed with a
-                    clean frontend structure and modern
-                    visual presentation.
+                    A live website for handcrafted Ganpati idols with
+                    product details, cart functionality and WhatsApp enquiry.
                 </p>
 
-                <div class="tags">
+                <div class="project-tags">
                     <span>HTML</span>
                     <span>CSS</span>
-                    <span>JAVASCRIPT</span>
-                    <span>RESPONSIVE</span>
+                    <span>JavaScript</span>
+                    <span>WhatsApp Integration</span>
                 </div>
 
-                <a href="https://ishakala.com/"
-                   target="_blank"
-                   class="project-link">
-                    VIEW LIVE WEBSITE →
+                <a href="https://ishakala.com/" target="_blank"
+                   rel="noopener noreferrer" class="project-link">
+                    VISIT LIVE WEBSITE ↗
                 </a>
-
             </div>
 
-        </div>
+        </article>
+
+    </div>
+</div>
+</section>
 
 
+<!-- ACADEMIC PROJECTS -->
+<section class="academic-section" id="academic">
 
-        <!-- DEMOS -->
-        <div class="demo-section">
+    <div class="work-section-heading">
+        <span>03 / LEARNING & DEVELOPMENT</span>
+        <h3>ACADEMIC PROJECTS</h3>
+        <p>Projects developed during my academic learning journey.</p>
+    </div>
+<div class="academic-pin">
+    <div class="academic-grid">
 
+        <article class="academic-card">
+            <span class="academic-number">01</span>
             <div>
-
-                <!-- <small>02 / INDEPENDENT WORK</small> -->
-
-                <h3>
-                    LANDING PAGE<br>
-                    <i>DEMOS.</i>
-                </h3>
-
+                <span class="academic-category">DJANGO PROJECT</span>
+                <h4>Pet Store</h4>
                 <p>
-                    Website concepts created for different
-                    business industries while exploring
-                    layouts, responsive design and frontend
-                    development.
+                    A web application developed using Django
+                    to manage and display pet-related information.
                 </p>
-
-                <div class="tags">
-                    <span>BOOTSTRAP</span>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Django</span>
                     <span>HTML</span>
                     <span>CSS</span>
-                    <span>JS</span>
                 </div>
-
-                <a href="https://manitech.vercel.app/"
-                   target="_blank"
-                   class="project-link">
-                    VIEW DEMOS →
-                </a>
-
             </div>
+        </article>
 
-
-            <div class="demo-cards">
-
-                <div class="demo-card card-one">
-                    DENTAL<br>
-                    <strong>CARE</strong>
-                </div>
-
-                <div class="demo-card card-two">
-                    NAIL<br>
-                    <strong>EXPERT</strong>
-                </div>
-
-                <div class="demo-card card-three">
-                    MANI<br>
-                    <strong>TECH</strong>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- SKILLS + EXPERIENCE -->
-<section class="skills-section section-pad" id="skills">
-    <div class="container-fluid px-lg-5">
-
-        <div class="two-col">
-
-            <!-- SKILLS -->
-            <div class="skill-column reveal">
-
-                <div class="section-title-row">
-                    <!-- <span class="section-index">02</span> -->
-
-                    <h2>
-                        SKILLS &<br>
-                        <em>TOOLKIT</em>
-                    </h2>
-                </div>
-
-                <div class="skill-list">
-
-                    <div class="skill-row">
-                        <span>HTML</span>
-                        <div class="skill-bar">
-                            <i style="width:95%"></i>
-                        </div>
-                        <b>95%</b>
-                    </div>
-
-                    <div class="skill-row">
-                        <span>CSS</span>
-                        <div class="skill-bar">
-                            <i style="width:90%"></i>
-                        </div>
-                        <b>90%</b>
-                    </div>
-
-                    <div class="skill-row">
-                        <span>BOOTSTRAP</span>
-                        <div class="skill-bar">
-                            <i style="width:90%"></i>
-                        </div>
-                        <b>90%</b>
-                    </div>
-
-                    <div class="skill-row">
-                        <span>JAVASCRIPT</span>
-                        <div class="skill-bar">
-                            <i style="width:80%"></i>
-                        </div>
-                        <b>80%</b>
-                    </div>
-
-                    <div class="skill-row">
-                        <span>WORDPRESS</span>
-                        <div class="skill-bar">
-                            <i style="width:75%"></i>
-                        </div>
-                        <b>75%</b>
-                    </div>
-
-                    <div class="skill-row">
-                        <span>REACT</span>
-                        <div class="skill-bar">
-                            <i style="width:65%"></i>
-                        </div>
-                        <b>65%</b>
-                    </div>
-
-                </div>
-
-                <div class="tool-tags">
-                    <span>GIT</span>
-                    <span>GITHUB</span>
-                    <span>CANVA</span>
-                    <span>PHOTOSHOP</span>
-                    <span>SEO</span>
-                    <span>HOSTING</span>
-                </div>
-
-            </div>
-
-
-            <!-- EXPERIENCE -->
-            <div class="experience-column reveal delay-1" id="experience">
-
-                <div class="section-title-row">
-
-                    <!-- <span class="section-index">03</span> -->
-
-                    <h2>
-                        IMPACT &<br>
-                        <em>EXPERIENCE</em>
-                    </h2>
-
-                </div>
-
-
-                <!-- F60 HOST -->
-                <div class="experience-item">
-
-                    <div class="exp-date">
-                        DEC 2024 — PRESENT
-                    </div>
-
-                    <div>
-
-                        <span class="exp-label">
-                            F60 HOST · MUMBAI
-                        </span>
-
-                        <h3>
-                            WEB DEVELOPER
-                        </h3>
-
-                        <p>
-                            Developing and maintaining responsive websites,
-                            working with HTML, CSS and JavaScript, handling
-                            website updates, hosting, domains and deployment.
-                            Also involved in WordPress, Search Console,
-                            Analytics and team coordination.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- MEXO -->
-                <div class="experience-item">
-
-                    <div class="exp-date">
-                        JUN 2024 — SEP 2024
-                    </div>
-
-                    <div>
-
-                        <span class="exp-label">
-                            MEXO SOLUTIONS · MUMBAI
-                        </span>
-
-                        <h3>
-                            WEB DEVELOPER
-                        </h3>
-
-                        <p>
-                            Built responsive websites, worked on WordPress,
-                            domain and DNS configuration, hosting setup,
-                            website updates, bug fixing and responsive testing.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-
-
-
-
-
-<!-- ABOUT -->
-<section class="section" id="about">
-
-    <div class="container">
-
-        <div class="about">
-
+        <article class="academic-card">
+            <span class="academic-number">02</span>
             <div>
-
-                <!-- <span>04 / ABOUT ME</span> -->
-
-                <h2>
-                    A DEVELOPER<br>
-                    WHO <i>BUILDS.</i>
-                </h2>
-
-            </div>
-
-
-            <div>
-
-                <p class="big-text">
-                    I'm Manasi Rane, a Web Developer &
-                    Frontend Developer based in Mumbai.
-                </p>
-
+                <span class="academic-category">DJANGO PROJECT</span>
+                <h4>Food App</h4>
                 <p>
-                    I enjoy turning ideas into clean,
-                    responsive websites. My work includes
-                    frontend development, website
-                    deployment, maintenance and basic SEO.
+                    A food-related web application built using Django
+                    as part of academic project work.
                 </p>
-
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
             </div>
+        </article>
+
+    </div>
+</div>
+</section>
+
+</div>
+</section>
+<!-- END WORK SECTION -->
+
+
+
+<!-- =================================
+     05. CONTACT SECTION
+================================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="contact-glow contact-glow-one"></div>
+    <div class="contact-glow contact-glow-two"></div>
+
+    <div class="contact-container">
+
+        <!-- SECTION INTRO -->
+        <div class="contact-intro">
+
+            <p class="contact-label">
+                <span>04</span> / CONTACT
+            </p>
+
+            <h2 class="contact-heading">
+                LET'S <span>CONNECT</span>
+            </h2>
+
+            <p class="contact-description">
+                I'm always open to connecting with developers,
+                recruiters, and people from the tech community.
+                Feel free to reach out and let's connect.
+            </p>
 
         </div>
 
+        <!-- CONTACT DETAILS -->
+        <div class="contact-content">
 
-        <!-- SKILLS -->
-        <div class="skills">
+            <!-- EMAIL CARD -->
+            <a href="mailto:ranemanasi1810@gmail.com"
+               class="contact-card">
 
-            <span>TECHNOLOGIES I WORK WITH</span>
+               <div class="contact-card-icon">
+    <svg viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="1.7"
+         stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="5" width="18" height="14" rx="2"/>
+        <path d="m3 7 9 7 9-7"/>
+    </svg>
+</div>
 
-            <div>
-                HTML
-                <b>·</b>
-                CSS
-                <b>·</b>
-                JAVASCRIPT
-                <b>·</b>
-                BOOTSTRAP
-                <b>·</b>
-                REACT
-                <b>·</b>
-                WORDPRESS
-                <b>·</b>
-                GIT
-                <b>·</b>
-                GITHUB
-                <b>·</b>
-                SEO
-            </div>
+                <div class="contact-card-info">
+                    <span>Email Me</span>
+                    <h3>ranemanasi1810@gmail.com</h3>
+                </div>
 
-        </div>
+                <span class="contact-arrow">↗</span>
+
+            </a>
 
 
-        <!-- EDUCATION -->
-        <div class="education">
+            <!-- LINKEDIN CARD -->
+            <a href="https://linkedin.com/in/manasi-rane-539a99220"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="contact-card">
 
-            <div>
-                <small>EDUCATION</small>
-                <strong>B.Sc. COMPUTER SCIENCE</strong>
-                <p>2023</p>
-            </div>
+               <div class="contact-card-icon">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M5 3.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM3.5 9h3v11h-3zM9 9h2.9v1.5h.1A3.2 3.2 0 0 1 15 8.8c3.2 0 3.8 2.1 3.8 4.8V20h-3v-5.7c0-1.4 0-3.2-2-3.2s-2.3 1.5-2.3 3.1V20h-3z"/>
+    </svg>
+</div>
 
-            <div>
-                <small>PROFESSIONAL COURSE</small>
-                <strong>FULL STACK WEB DEVELOPMENT</strong>
-                <p>IT Vedant · 2023</p>
-            </div>
+                <div class="contact-card-info">
+                    <span>Connect on</span>
+                    <h3>LinkedIn</h3>
+                </div>
+
+                <span class="contact-arrow">↗</span>
+
+            </a>
+
+
+            <!-- GITHUB CARD -->
+            <a href="https://github.com/mannasiii"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="contact-card">
+
+            <div class="contact-card-icon">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.1c-3.1.67-3.75-1.32-3.75-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.92.1-.72.39-1.21.7-1.49-2.47-.28-5.06-1.24-5.06-5.5 0-1.21.43-2.2 1.15-2.98-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.11-1.44 3.05-1.14 3.05-1.14.61 1.53.23 2.67.11 2.95.72.78 1.15 1.77 1.15 2.98 0 4.27-2.59 5.22-5.07 5.5.4.35.75 1.02.75 2.06v3.08c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/>
+    </svg>
+</div>
+
+                <div class="contact-card-info">
+                    <span>Explore my code</span>
+                    <h3>GitHub</h3>
+                </div>
+
+                <span class="contact-arrow">↗</span>
+
+            </a>
 
         </div>
 
@@ -531,93 +959,53 @@
 
 </section>
 
+<!-- =================================
+     FOOTER
+================================= -->
 
+<footer class="site-footer">
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
+    <div class="footer-container">
 
-    <div class="container">
+        <div class="footer-left">
+            <h3>Manasi Rane<span>.</span></h3>
+            <p>Web Developer | WordPress | Technical SEO</p>
+        </div>
 
-        <!-- <span>05 / CONTACT</span> -->
-
-        <h2>
-            LET'S MAKE<br>
-            <i>SOMETHING.</i>
-        </h2>
-
-
-        <div class="contact-grid">
-
-            <div>
-
-                <p>
-                    Looking for a Web Developer or need
-                    a website built? Let's talk.
-                </p>
-
-                <a class="email"
-                   href="mailto:ranemanasi1810@gmail.com">
-                    ranemanasi1810@gmail.com →
-                </a>
-
-            </div>
-
-
-            <div class="contact-details">
-
-                <div>
-                    <small>PHONE</small>
-                    <a href="tel:+919867741984">
-                        +91 98677 41984
-                    </a>
-                </div>
-
-                <div>
-                    <small>LINKEDIN</small>
-                    <a href="https://www.linkedin.com/in/manasi-rane-539a99220/"
-                       target="_blank">
-                        manasi-rane ↗
-                    </a>
-                </div>
-
-                <div>
-                    <small>GITHUB</small>
-                    <a href="https://github.com/mannasiii"
-                       target="_blank">
-                        github.com/mannasiii ↗
-                    </a>
-                </div>
-
-            </div>
-
+        <div class="footer-right">
+            <a href="#home" class="back-to-top">
+                Back to Top <span>↑</span>
+            </a>
         </div>
 
     </div>
 
-</section>
+    <div class="footer-bottom">
+        <p>
+            © <span id="copyrightYear"></span> Manasi Rane.
+            All rights reserved.
+        </p>
 
-
-
-<footer>
-
-    <div class="container">
-
-        <div>
-            MANASI <i>RANE</i>
-        </div>
-
-        <span>
-            Designed with Manasii ♥
-        </span>
-
+        <p>Designed & Developed with <span>Manasii ♥</span></p>
     </div>
 
 </footer>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </main>
 
-<script src="script.js"></script>
+
+    <!-- GSAP LIBRARY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+
+
+    <!-- SCROLL TRIGGER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="script.js"></script>
+  
 
 </body>
+
 </html>
